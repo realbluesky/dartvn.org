@@ -1,3 +1,5 @@
 name: DartVN
 markdown: redcarpet
 pygments: true
+google_analytics_id: UA-44378528-1
+repository: https://github.com/realbluesky/dartvn

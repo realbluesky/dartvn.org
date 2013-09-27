@@ -1,13 +1,83 @@
 ---
 layout: default
 title: DartVN - Visual Novel Engine for Dart
+overview: true
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<section class="intro">
+  <div class="grid">
+    <div class="unit whole center-on-mobiles">
+      <p class="first">Scripted, visual, interactive experiences for the modern web.</p>
+    </div>
+  </div>
+</section>
+<section class="features">
+  <div class="grid">
+    <div class="unit one-third">
+      <h2>Friendly</h2>
+      <p>
+        No programming experience required - all of the essentials at your fingertips.
+      </p>
+      <a href="/docs/usage/" class="">Using DartVN &rarr;</a>
+    </div>
+    <div class="unit one-third">
+      <h2>Readable</h2>
+      <p>Simple, yet powerful <a href="http://en.wikipedia.org/wiki/YAML" target="_blank">YAML</a> script(s) orchestrate your entire user experience.</p>
+      <a href="/docs/script/" class="">DartVN script guide &rarr;</a>
+    </div>
+    <div class="unit one-third">
+      <h2>Cross-platform</h2>
+      <p>
+        The <a href="http://caniuse.com/canvas" target="_blank">HTML5 Canvas API</a> is well-supported by all modern browsers, including mobile.
+      </p>
+      <a href="/docs/examples/" class="">View examples &rarr;</a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+<section class="quickstart">
+  <div class="grid">
+    <div class="unit golden-large center-on-mobiles">
+      <h4></h4>
+    </div>
+    <div class="unit golden-small code">
+      <p class="title">Welcome DartVN Script.</p>
+      <div class="editor">
+        <textarea id="yamleditor">
+options:
+  stageId: welcome</textarea>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<section class="built-with">
+  <div class="grid">
+    <div class="unit whole">
+      <div class="grid pane">
+        <div class="unit whole center-on-mobiles">
+          <div class="pane-content">
+            <h2 class="center-on-mobiles">Standing on the shoulders of <strong>giants</strong></h2>
+            <p>DartVN is written in <a href="http://dartlang.org" target="_blank">Dart</a>, an open-source, batteries-included developer platform for building structured <a href="http://html5rocks.com" target="_blank">HTML5</a> web apps.  It wraps the wonderful <a href="http://stagexl.org" target="_blank">StageXL</a> library with an eye for enabling low-effort, high-quality scripted, visual, interactive experiences.</p>
+          </div>
+          <div class="giants">
+            <div class="unit one-third">
+              <a href="https://www.dartlang.org" target="_blank"><img src="img/dart-logo.png" alt="Dart Programming Language"></a>
+            </div><div class="unit one-third">
+              <a href="http://www.html5rocks.com" target="_blank"><img src="img/html5-logo.png" alt="HTML5 Standard"></a>
+            </div><div class="unit one-third">
+              <a href="http://www.stagexl.org" target="_blank"><img src="img/stagexl-logo.png" alt="StageXL Library"></a>
+            </div>  
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>var cm;
+$(function () {
+  cm = CodeMirror.fromTextArea($('#yamleditor').get()[0], {lineNumbers: true, theme: 'dartvn'});
+});
+</script>
