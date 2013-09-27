@@ -2,7 +2,7 @@
 
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
-  height: 300px;
+  height: 250px;
 }
 .CodeMirror-scroll {
   /* Set scrolling behaviour here */
@@ -99,7 +99,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
 /* DartVN Theme */
 .cm-s-dartvn.CodeMirror {background: #3d3d3d; color: #f8f8f2; border-radius: 0px 0px 10px 10px;}
 .cm-s-dartvn div.CodeMirror-selected {background: #49483E !important;}
-.cm-s-dartvn .CodeMirror-gutters {background: transparent; border-right: 1px dashed #999; }
+.cm-s-dartvn .CodeMirror-gutters {background: #222; border-right: 1px dashed #999; }
 .cm-s-dartvn .CodeMirror-linenumber {color: #d0d0d0;}
 .cm-s-dartvn .CodeMirror-cursor {border-left: 1px solid #f8f8f0 !important;}
 

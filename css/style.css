@@ -239,7 +239,7 @@ body > footer a:hover img {
 
 @media (min-width: 768px){
   .quickstart .code {
-    font-size: 18px;
+    font-size: 14px;
     margin: -30px 0;
     float: right;
   }
@@ -280,6 +280,11 @@ body > footer a:hover img {
   background: linear-gradient(top,  #f7f7f7 0%,#cfcfcf 7%,#aaaaaa 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#aaaaaa',GradientType=0 );
   border-bottom: 1px solid #111;
+}
+
+.quickstart .code .title button {
+  float:right;
+  margin-right: 5px;
 }
 
 .quickstart .code .editor {

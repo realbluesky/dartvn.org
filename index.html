@@ -28,7 +28,7 @@ overview: true
     <div class="unit one-third">
       <h2>Cross-platform</h2>
       <p>
-        The <a href="http://caniuse.com/canvas" target="_blank">HTML5 Canvas API</a> is well-supported by all modern browsers, including mobile.
+        The HTML5 Canvas API is <a href="http://caniuse.com/canvas" target="_blank">well-supported</a> by all modern browsers, including mobile.
       </p>
       <a href="/docs/examples/" class="">View examples &rarr;</a>
     </div>
@@ -37,15 +37,13 @@ overview: true
 </section>
 <section class="quickstart">
   <div class="grid">
-    <div class="unit golden-large center-on-mobiles">
-      <h4></h4>
+    <div class="unit half center-on-mobiles">
+      <canvas data-script="#yamleditor" id="welcome" width="480" height="200"></canvas>
     </div>
-    <div class="unit golden-small code">
-      <p class="title">Welcome DartVN Script.</p>
+    <div class="unit half code">
+      <p class="title">Welcome DartVN Script.<button data-reload="welcome" href="#">Reload</button></p>
       <div class="editor">
-        <textarea id="yamleditor">
-options:
-  stageId: welcome</textarea>
+        <textarea id="yamleditor">{% include examples/welcome.yaml %}</textarea>
       </div>
     </div>
     <div class="clear"></div>
