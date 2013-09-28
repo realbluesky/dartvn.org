@@ -74,8 +74,11 @@ overview: true
     </div>
   </div>
 </section>
-<script>var cm;
+<script>
 $(function () {
   cm = CodeMirror.fromTextArea($('#yamleditor').get()[0], {lineNumbers: true, theme: 'dartvn'});
+  cm.on('change',function(cmi,chg) {
+    cmi.save();
+  });
 });
 </script>
