@@ -1,5 +1,5 @@
 options:
-  defaults: {text_format: hello, wait: 3, gap: 1}
+  defaults: {text_format: hello, for: 3, gap: 1}
   layers: [bg]
   positions:
     mc: {middle: 0, center: 0}
@@ -11,5 +11,5 @@ script:
   - [set, bg, mc, "Welcome to DartVN.org!"]
   - [set, bg, mc, "We hope you'll create wonderful things."]
   - [set, bg, mc, "Please see the documentation for more!"]
-  - [set, bg, mc, "", {wait: 1}]
+  - [set, bg, mc, "", {for: 1}]
   - [goto, start]
