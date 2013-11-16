@@ -1,15 +1,16 @@
 options:
+  scale: showAll
   defaults: {text_format: hello, for: 3, gap: 1}
   layers: [bg]
   positions:
     mc: {middle: 0, center: 0}
   text_formats:
     hello: {font: 'Lato, Calibri', size: 25,
-            color: 0xffaaffff, align: center, height: 31}
+            color: 0xaaffff, align: center, height: 31}
 script:
   - [label, start]
   - [set, bg, mc, "Welcome to DartVN.org!"]
-  - [set, bg, mc, "We hope you'll create wonderful things."]
+  - [set, bg, mc, "Let's create something {color=0x0081C6}awesome{/color}."]
   - [set, bg, mc, "Please see the documentation for more!"]
   - [set, bg, mc, "", {for: 1}]
   - [goto, start]
