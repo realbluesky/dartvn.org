@@ -1,5 +1,5 @@
 options:
-  name: Wind Waker Intro Demo
+  name: Wind Waker Intro Example
   scale: showAll
   align: none
   width: 1920
@@ -23,12 +23,11 @@ options:
   aliases:
     txt: [set, text, bc, :1, {for: :2}]
 assets:
-  image_path: img/windwaker/image/
+  image_path: /img/windwaker/image/
   images: {s1: story1.jpg, s2: story2.jpg, s3: story3.jpg, s4: story4.jpg, s5: story5.jpg, s6: story6.jpg}
   sounds:
-    legendaryHero: img/windwaker/sound/story.mp3
+    legendaryHero: /img/windwaker/sound/story.mp3
 script:
-   - [label, start]
    - [play, backgroundMusic, legendaryHero]
    - [set, background, tl, 0xFF000000, {trans: fade, dur: 0, for: .5}]
    - [set, text, mc, "This is but one of the legends of which the people speak...", {trans: fade, for: 6}]
@@ -68,4 +67,3 @@ script:
    - [txt, "The elders wished only for the youths to know courage like the hero of legend...", 8]
    - [set, text, bc]
    - [set, drawing, im, "", {for: 1}]
-   - [goto, start]

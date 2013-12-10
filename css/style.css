@@ -232,14 +232,16 @@ body > footer a:hover img {
 }
 
 .quickstart .code {
-  font-size: 12px;
   display: block;
   margin: 0 0 -30px;
 }
 
+.code {
+  font-size: 12px;
+}
+
 @media (min-width: 768px){
   .quickstart .code {
-    font-size: 14px;
     margin: -30px 0;
     float: right;
   }
@@ -247,18 +249,21 @@ body > footer a:hover img {
     margin: 50px 0 0;
     text-align: center;
   }
+
+  .code {
+    font-size: 14px;
+  }
 }
 
 /* Code */
-
-.quickstart .code {
+.code {
   display: block;
   padding: 0;
   font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
   line-height: 1.3em;
 }
 
-.quickstart .code .title {
+.code .title {
   display: block;
   text-align: center;
   margin: 0 20px;
@@ -282,12 +287,12 @@ body > footer a:hover img {
   border-bottom: 1px solid #111;
 }
 
-.quickstart .code .title button {
+.code .title button {
   float:right;
   margin-right: 5px;
 }
 
-.quickstart .code .editor {
+.code .editor {
   text-shadow: none;
   margin: 0 20px;
   background: #3d3d3d;
@@ -295,29 +300,29 @@ body > footer a:hover img {
   box-shadow: 0 5px 30px rgba(0,0,0,.3);
 }
 
-.quickstart .code .line {
+.code .line {
   display: block;
   margin: 0;
   padding: 0;
 }
 
-.quickstart .code .line span {
+.code .line span {
   display: inline-block;
 }
 
-.quickstart .code .path {
+.code .path {
   color: #87ceeb;
 }
 
-.quickstart .code .prompt {
+.code .prompt {
   color: #cd5c5c;
 }
 
-.quickstart .code .command {
+.code .command {
   color: #f0e68c;
 }
 
-.quickstart .code .output {
+.code .output {
   color: #888;
 }
 

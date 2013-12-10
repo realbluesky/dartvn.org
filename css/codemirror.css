@@ -9,6 +9,16 @@
   overflow: auto;
 }
 
+.examples .CodeMirror {
+  height:auto;
+}
+
+.examples .CodeMirror-scroll {
+  /* Set scrolling behaviour here */
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
 /* PADDING */
 
 .CodeMirror-lines {

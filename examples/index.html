@@ -1,0 +1,35 @@
+---
+layout: default
+title: DartVN - Examples
+---
+
+<section class="examples">
+  <div class="grid">
+    <div class="unit whole center-on-mobiles">
+    	<article>
+	    	<h1>Examples</h1>
+	    	<p>This section exists to demonstrate what can be done with DartVN.  All DartVN Scripts are editable and can be reloaded so you can
+	    	try and learn on your own!</p>
+	    	<h2>Wind Waker Intro</h2>
+	    	<p>A recreation of The Legend of Zelda - Wind Waker's introduction story sequence!  <a href="http://www.youtube.com/watch?v=XDQLQpEAP3w" target="_blank">Compare to the original.</a></p>
+	    	<div class="center-on-mobiles">
+      			<canvas data-script="#yamleditor" id="windwaker" style="margin:0 0 10px -5%; width:110%;" width="1920" height="1080"></canvas>
+    		</div>
+    		<div class="code">
+      			<p class="title">Wind Waker<button data-reload="windwaker" href="#">Reload</button></p>
+      			<div class="editor">
+        			<textarea id="yamleditor">{% include examples/windwaker.yaml %}</textarea>
+      			</div>
+    		</div>
+    	</article>
+    </div>	
+  </<div>
+</section>
+<script>
+$(function () {
+  cm = CodeMirror.fromTextArea($('#yamleditor').get()[0], {lineNumbers: true, theme: 'dartvn', viewportMargin: Infinity});
+  cm.on('change',function(cmi,chg) {
+    cmi.save();
+  });
+});
+</script>
